@@ -4,8 +4,15 @@ int main(void)
 {
   int c;
 
-  while ((c = getchar()) != 0)
+  while ((c = getchar()) != EOF)
   {
-    
+    if (c == ' ')
+    {
+      putchar('\n');
+    }
+    else
+    {
+      putchar(c);
+    }
   }
 }
